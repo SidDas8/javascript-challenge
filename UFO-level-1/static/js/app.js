@@ -23,4 +23,17 @@ data.forEach((ufo_sighting) => {
         // Step 5: Use d3 to update each cell's text with weather report values
         cell.text(value);
     });
-  });
+});
+
+// Select the button
+var button = d3.select("#filter-btn");
+
+// Create event handler
+button.on("click", runEnter);
+
+// Complete the event handler function
+function runEnter() {
+
+    // Prevent the page from refreshing
+    d3.event.preventDefault();
+}
