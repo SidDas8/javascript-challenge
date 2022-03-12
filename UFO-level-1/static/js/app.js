@@ -46,4 +46,6 @@ function runEnter() {
     // Filter table according to user input date
     var filteredData = tableData.filter(ufo_sighting => ufo_sighting.datetime === inputValue);
 
+    // Empty table data before rebuilding table
+    tbody.html("");
 }
