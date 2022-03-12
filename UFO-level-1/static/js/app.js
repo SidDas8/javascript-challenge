@@ -17,10 +17,10 @@ data.forEach((ufo_sighting) => {
     Object.values(ufo_sighting).forEach((value) => {
         console.log(value);
 
-        // Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
+        // Step 4: Use d3 to append 1 cell per ufo_sighting value
         var cell = row.append("td");
 
-        // Step 5: Use d3 to update each cell's text with weather report values
+        // Step 5: Use d3 to update each cell's text with ufo_sighting values
         cell.text(value);
     });
 });
@@ -49,7 +49,7 @@ function runEnter() {
     // Empty table data before rebuilding table
     tbody.html("");
 
-    // Arrow function to append the ufo sightings data to the table in index.html
+    // Arrow function to append the filtered ufo sightings data to the table in index.html
     filteredData.forEach((ufo_sighting) => {
 
         // Step 1: Loop Through `data` and console.log each ufo_sighting object
@@ -62,10 +62,10 @@ function runEnter() {
         Object.values(ufo_sighting).forEach((value) => {
             console.log(value);
 
-            // Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
+            // Step 4: Use d3 to append 1 cell per ufo_sighting value
             var cell = row.append("td");
 
-            // Step 5: Use d3 to update each cell's text with weather report values
+            // Step 5: Use d3 to update each cell's text with ufo_sighting values
             cell.text(value);
         });
     });
